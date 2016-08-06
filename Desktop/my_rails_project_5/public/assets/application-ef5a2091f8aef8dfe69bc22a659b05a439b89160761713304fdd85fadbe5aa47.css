@@ -1,0 +1,553 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 6, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/products.scss */
+.product-list {
+  margin-top: 4em;
+}
+
+/* line 10, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/products.scss */
+.carousel-indicators li {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin: 10px;
+  margin-top: 20px;
+  text-indent: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: #0000ff;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* line 23, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/products.scss */
+.carousel-indicators .active {
+  width: 28px;
+  height: 28px;
+  margin: 10px;
+  margin-top: 20px;
+  background-color: #ffff99;
+}
+
+/* line 31, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/products.scss */
+.carousel-caption {
+  margin-bottom: 10em;
+  background-color: yellow;
+  font-size: 1.2em;
+  border-radius: 50%;
+}
+
+/* line 38, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/products.scss */
+.header h1 {
+  margin-top: 4em;
+  color: red;
+}
+/* line 1, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 28, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 40, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 44, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 50, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 58, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 3, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+h1, h2 {
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 12px;
+  color: #d67ccc;
+}
+
+/* line 14, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+h2 {
+  color: blue;
+}
+
+/* line 18, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.timer {
+  margin-top: 5em;
+}
+
+/* line 21, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+p {
+  color: #7380de;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 22.8571px;
+  margin-left: 4em;
+}
+
+/* line 32, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.my-image {
+  height: 18em;
+  width: 22em;
+  margin-left: 3em;
+  padding-bottom: 2em;
+  padding-top: 1em;
+  display: inline-block;
+}
+
+/* line 41, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+h1, h2 {
+  margin-left: 3em;
+  line-hight: 1.5em;
+}
+
+/* line 47, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+#address ul li {
+  text-decoration: none;
+  font-size: 1em;
+  font-color: green;
+}
+
+/* line 53, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.about {
+  margin-top: 4em;
+}
+
+/* line 57, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.contact {
+  margin-top: 4em;
+}
+
+/*-------Contact Starts Here-------------------------*/
+/* line 64, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.header-contact {
+  height: 4em;
+  padding-top: 5em;
+}
+
+/* line 70, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.header-contact h1 {
+  margin-top: 1.5em;
+  text-align: center;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-variant: normal;
+  font-weight: bold;
+  color: green;
+}
+
+/* line 82, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.contact-us {
+  background-image: url(/assets/contactBackground-ec9342467309f9649cce47d1e6c28fb9b0337c951be336a11e6d041e8a4bc1a8.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  padding: 100px;
+  padding-top: 50px;
+  height: 400px;
+  margin-bottom: 5em;
+  margin-top: 1.56em;
+}
+
+/* line 97, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.address li {
+  color: #b8e0be;
+}
+
+/* line 104, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.address ul li {
+  list-style-type: none;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 1.6em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 2em;
+}
+
+/* line 115, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.address {
+  margin-top: 2em;
+  text-align: center;
+}
+
+/* line 121, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.address li a {
+  color: #b8e0be;
+  transition: color 800ms;
+  -webkit-transition: color 800ms;
+}
+
+/* line 128, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.address a:hover {
+  color: green;
+  text-decoration: none;
+}
+
+/* line 134, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.glyphicon:hover {
+  color: red;
+}
+
+/* line 138, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.form-group {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 143, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.form-control {
+  width: 50%;
+}
+
+/* line 147, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+#inputEmail {
+  background-color: #666;
+  color: white;
+}
+
+/* line 152, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+#inputPassword {
+  background-color: #666;
+  color: white;
+}
+
+/* line 156, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.btn-success {
+  margin-bottom: 3em;
+}
+
+@media only screen and (max-width: 500px) {
+  /* line 161, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+  body {
+    background-color: lightblue;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 167, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+  .glyphicon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 173, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+  .address ul li {
+    font-size: .8em;
+  }
+}
+/* line 178, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.photo {
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  height: 450px;
+  position: relative;
+}
+
+/* line 186, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.photo span {
+  bottom: 0;
+  color: white;
+  display: block;
+  left: 50%;
+  margin-left: -640px;
+  font-size: 38px;
+  padding: 10px;
+  position: absolute;
+  text-shadow: 0 2px 0 black, 0 0 10px black;
+  width: 1280px;
+  text-align: center;
+}
+
+/* line 201, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.backgroundbike {
+  background-image: url(/assets/racebike5-d5f7300dfd2a470d3d07335a1c54a33425b37cb40162caaaceae570bbd5e94d0.png);
+}
+
+/* line 205, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.panel-body {
+  margin-top: 8em;
+}
+
+/* line 209, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.button {
+  margin-left: 4em;
+  margin-top: 2em;
+  color: blue;
+}
+
+/* line 215, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.footer {
+  margin-top: 20em;
+}
+
+/*---------------Contact Ends Here-----------------------*/
+/*--------------About Start Here-------------------*/
+/* line 222, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.main-text-about p {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  -webkit-column-count: 2;
+  /* Chrome, Safari, Opera */
+  -moz-column-count: 2;
+  /* Firefox */
+}
+
+/* line 229, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.main-text-about h3 {
+  margin-top: 4em;
+  text-align: center;
+  font-size: 2em;
+  color: #b8e0be;
+}
+
+/* line 236, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.racebike5 {
+  background-image: url(/assets/aboutbike-ce6b002bdcb0a5e43d15b1d4edf6ef573002651419323e14e98bbac749ac5a1a.jpg);
+  margin-top: 8em;
+}
+
+/* line 241, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.homepic {
+  background-image: url(/assets/homepic-8da23e9fa6a01988e466440a9e41bb441dcbb79923c9699e13bdc9fd13a842e3.jpg);
+  margin-top: 8em;
+}
+
+/* line 247, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/static_pages.scss */
+.product_info {
+  float: left;
+}
+/* line 4, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/users.scss */
+.main {
+  margin-top: 14em;
+  text-align: center;
+}
+
+/* line 9, /Users/kulbhushangoswami/Desktop/rails/my_rails_taskproject3.7/app/assets/stylesheets/users.scss */
+.main h2 {
+  padding-bottom: 5em;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+body{
+ 	background-color: #99ada9;
+
+ }
+
+.navbarFluid {
+  height: 3.5em;
+	padding-bottom: 1em;
+	background-color: #436c40;
+	width: 100%;
+}
+
+.nav {
+	margin-right: 2em;
+}
+
+.navbar-right ul li {
+	font-size: 2em;
+	padding-top: .5em;
+	font-family: 'Arial Narrow', Arial, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 400;
+	line-height: 12px
+
+}
+
+
+h1 {
+	font-size: 2em;
+	color: black;
+	text-align: center;
+}
+
+
+
+.field {
+	color: green;
+}
+
+.new-product {
+	margin-left: 3em;
+	margin-top: 0;
+	font-size: 1.6em;
+	font-style: italic;
+	padding-bottom: 2em;
+}
+/*-------notice/alert-------------*/
+
+.notice {
+	margin-top: 4em;
+}
+
+
+
+
+
+/*-------start footer---------------------*/
+
+.footer {
+	height: 3em;
+	background-color: #d97cd9;
+	margin-bottom: 0;
+	
+}
+
+
+.copyright {
+	float: right;
+	margin-right: 2em;
+	padding-top: 0.7em;
+	
+	color: red;
+	font-style: italic;
+}
+
+.social {
+	margin-left: 2em;
+	
+	display: inline-block;
+}
+
+.fb-like {
+
+	display: inline-block;
+	margin-left: 3em;
+
+}
+
+.form_password_request {
+	margin-top: 8em;
+	text-align: center;
+}
+
+

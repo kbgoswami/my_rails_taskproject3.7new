@@ -1,0 +1,85 @@
+<div class="container-fluid main">
+ <div class="row products">
+   
+  
+    <p id="notice"><%= notice %></p>
+      <div class="col-md-4 col-xs-12">
+        <div class="thumbnail">
+          <%= image_tag(@product.image_url, width: "350", data_zoom_image: @product.image_url, class: "img-zoom") %>
+       </div><!--end thumbnail-->
+      </div>
+
+      <div class="col-md-4 col-xs-12">
+
+        <div class="product_info">
+          <br>
+          <br>
+
+    
+
+         <p><strong>Name:</strong>
+           <span class="glyphicon glyphicon-flash"><%= @product.name %></span> 
+        </p>
+
+        <p>
+          <strong>Description:</strong>
+           <span class="glyphicon glyphicon-flash"><%= @product.description %></span>
+        </p>
+
+     
+
+        <p>
+          <strong>price:</strong>
+           <span class="glyphicon glyphicon-star"><%= "$#{@product.price}" %> </span>
+        </p>
+
+        <p>
+          <strong>Color:</strong>
+           <span class="glyphicon glyphicon-star"><%= @product.color %></span>
+        </p>
+     
+      </div>
+     </div><!--end product_info-->
+
+      <br>
+      <br>
+
+      </div>
+
+      <div class="comments">
+        <%= render 'new_comment' %>
+        <%= render 'comments' %>
+      </div><!-- end comments div-->
+        
+        <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+ 
+       <%= form_tag "/payments/create" do %>
+       <%= render partial: "shared/stripe_checkout_button" %>
+       <%= hidden_field_tag(:product_id, @product.id) %>
+       <%= hidden_field_tag(:product_price, @product.price) %>
+
+       
+<% end %>
+  <br>
+  <br>
+
+
+    <%= link_to 'Edit', edit_product_path(@product) %> 
+    <%= link_to 'Back', products_path %>
+
+    </div>
+
+    
+</div>
+
+<%= render 'new_comment' %>
+
+<div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
+
+<%= render 'comments' %>
+
+<br>
+<br>
+<br>
+
+

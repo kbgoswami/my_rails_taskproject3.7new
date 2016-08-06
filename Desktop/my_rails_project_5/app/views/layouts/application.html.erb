@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MyRailsTaskproject37</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= action_cable_meta_tag %>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-brand navbarFluid" role="navigation">
+      
+       <div class="navbar-header">
+        <h4>My Bikes App</h4>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+        </button>
+       </div><!--end navbar-header--> 
+         <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right"> 
+            <li><%= form_tag("/products", method: "get", class: "navbar-form") do %>
+
+           
+              <%= label_tag(:q, "Search for:") %>
+          
+
+            <%= text_field_tag(:q) %>
+            <%= submit_tag("Search", class: "btn btn-default") %>
+            <% end %>
+            </li>
+            <li>
+              <% if user_signed_in? %>
+                <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+                <% else %>
+                  <%= link_to('Login', new_user_session_path) %>
+              <% end %>
+             </li>
+            <li><%= link_to "Products", products_path %></li>  
+            <li><%= link_to "About", static_pages_about_path %></li>
+            <li><%= link_to "Home", static_pages_index_path %></li>
+            <li><%= link_to "Contact", static_pages_contact_path %></li>
+            <li><%= link_to "Featured Products", static_pages_landing_page_path %></li>
+
+          </ul>
+         </div><!--end navbar-collapse-->
+    </nav><!--end nav-->
+
+    <% if notice %>
+      <p id="notice" class="alert alert-info"><%= notice %></p>
+    <% end %>
+
+    <!--
+    <p class="alert"><%= alert %></p>
+    
+  -->
+    <% if alert %>
+      <p id="alert" class="alert alert-info"><%= alert %></p>
+    <% end %>
+   
+  
+
+<%= yield %>
+
+<!--Start footer-->
+      <footer>
+        <div class="copyright">
+         &copy;Bay Area Web Designers: 2016
+        </div>
+        <div class="social media">
+          <a href="https://twitter.com/twitter" class="twitter-follow-button" data-show-count="false">Follow @twitter</a>
+        
+
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true">
+        </div>
+       </div> 
+       </footer>
+     
+      <!--end footer-->
+
+</body>
+</html>
