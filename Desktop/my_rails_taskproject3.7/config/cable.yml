@@ -1,0 +1,9 @@
+development:
+  adapter: async
+
+test:
+  adapter: async
+
+production:
+  adapter: postgresql
+  url: postgres://gmsrntfkxueegh:-Rs1mD6Z9PulI6981DgKDnBlAO@ec2-23-21-249-224.compute-1.amazonaws.com:5432/de1hk7vj2bgg47

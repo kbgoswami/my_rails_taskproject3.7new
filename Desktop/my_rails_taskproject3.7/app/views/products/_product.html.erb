@@ -1,0 +1,17 @@
+<div class="container-fluid product-list">
+  <div class="row">
+    <% cache product do %>
+    <tr>
+      <h1><td><%= product.name %></td></h1>
+      <p><td><%= image_tag(product.image_url, class: "img-responsive img-zoom", width: "350") %></td></p>
+      <p><td><%= product.description %></td></p>
+      <p><td><%= product.color %></td></p>
+      <p><td>$<%= product.price %></td></p>
+      <p><td><%= link_to 'Show', product %></td></p>
+      <p><td><%= link_to 'Edit', edit_product_path(product) %></td></p>
+      <p><td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td></p>
+    </tr>
+    <% end %>
+    
+  </div>
+</div>
