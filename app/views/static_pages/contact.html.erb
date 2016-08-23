@@ -1,0 +1,56 @@
+
+  <div class="container-fluid anchor contactus" id="contact">
+    <div class="header-contact" id="contact">     
+        <h1>Bay Area Web Designers Contact Information</h1>
+    </div><!--header-->
+
+    <div class="contact-us">
+          
+
+
+          <!--Google Map API Start -->
+
+          <div id="map"></div>
+              
+          
+
+      
+        <div class="address">
+          <ul>
+            <li><span class="glyphicon glyphicon-road"></span>  Address:1234 Lost St.,Found City, USA</li>
+            <li><span class="glyphicon glyphicon-earphone"></span>
+            1-222-333-4444</li>
+            <li><span class="glyphicon glyphicon-send"></span>
+            <a href="mailto:kbgoswami@comcast.net"> contact@support.com</a></span></li>
+          </ul>
+        </div><!--end address column"-->
+        
+      </div><!--contact-us-->
+  </div><!--jumbotron--> 
+
+    <!--contact forms start-->
+
+<%= flash[:notice] %>
+
+<%= form_tag("/static_pages/thank_you") do %>
+<div class="row">
+  <div class="col-md-4">
+    <div class="form-group">
+      <%= label_tag :name, "Name" %>
+      <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+    </div>      
+    <div class="form-group">
+      <%= label_tag :email, "Email Address" %>
+      <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+    </div>
+    <div class="form-group">
+      <%= label_tag :message, "Message" %>
+      <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+    </div>      
+  </div>
+  </div>
+<%= submit_tag "Send", class:'button' %>   
+<% end %>
+
+
+
