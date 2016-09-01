@@ -1,0 +1,123 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body{
+ 	background-color: #99ada9;
+
+ }
+
+.navbarFluid {
+  height: 3.5em;
+	padding-bottom: 1em;
+	background-color: #436c40;
+	width: 100%;
+}
+
+.nav {
+	margin-right: 2em;
+}
+
+.navbar-right ul li {
+	font-size: 2em;
+	padding-top: .5em;
+	font-family: 'Arial Narrow', Arial, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 400;
+	line-height: 12px
+
+}
+
+
+h1 {
+	font-size: 2em;
+	color: black;
+	text-align: center;
+	margin-top: 6em;
+}
+
+h2 {
+	margin-top: 5em;
+}
+
+
+
+.field {
+	color: green;
+}
+
+.new-product {
+	margin-left: 3em;
+	margin-top: 0;
+	font-size: 1.6em;
+	font-style: italic;
+	padding-bottom: 2em;
+}
+/*-------notice/alert-------------*/
+
+.notice {
+	margin-top: 4em;
+}
+
+.form-group {
+	margin-top: 4em;
+	
+}
+
+ 
+
+
+
+
+/*-------start footer---------------------*/
+
+.footer {
+	height: 3em;
+	background-color: #d97cd9;
+	margin-bottom: 0;
+	
+}
+
+
+.copyright {
+	float: right;
+	margin-right: 2em;
+	padding-top: 0.7em;
+	
+	color: red;
+	font-style: italic;
+}
+
+.social {
+	margin-left: 2em;
+	
+	display: inline-block;
+}
+
+.fb-like {
+
+	display: inline-block;
+	margin-left: 3em;
+
+}
+
+.form_password_request {
+	margin-top: 8em;
+	text-align: center;
+}
+
+
